@@ -1,23 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dspqu127uhrx7"]
+[gd_scene load_steps=2 format=3 uid="uid://dspqu127uhrx7"]
 
 [ext_resource type="PackedScene" uid="uid://7hjtom8dop17" path="res://player.tscn" id="1_s3nm6"]
-[ext_resource type="PackedScene" uid="uid://cpvw0x43be1y7" path="res://platform.tscn" id="2_xswxi"]
 
 [node name="main" type="Node2D"]
-metadata/_edit_horizontal_guides_ = []
 
 [node name="player" parent="." instance=ExtResource("1_s3nm6")]
-position = Vector2(599, 345)
 safe_margin = 0.001
-
-[node name="platform" parent="." instance=ExtResource("2_xswxi")]
-position = Vector2(594, 477)
-
-[node name="platform2" parent="." instance=ExtResource("2_xswxi")]
-position = Vector2(957, 572)
-
-[node name="platform3" parent="." instance=ExtResource("2_xswxi")]
-position = Vector2(219, 343)
-
-[node name="platform4" parent="." instance=ExtResource("2_xswxi")]
-position = Vector2(817, 217)
