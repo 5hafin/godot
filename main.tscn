@@ -1,12 +1,28 @@
-[gd_scene load_steps=3 format=3 uid="uid://dspqu127uhrx7"]
+[gd_scene load_steps=4 format=3 uid="uid://dspqu127uhrx7"]
 
+[ext_resource type="Texture2D" path="res://c15780aa-c80e-4664-be16-eaf755f2f12a.png" id="1_nd762"]
 [ext_resource type="PackedScene" uid="uid://7hjtom8dop17" path="res://player.tscn" id="1_s3nm6"]
 [ext_resource type="PackedScene" uid="uid://bwc7htsfjeao7" path="res://platform.tscn" id="2_86sp1"]
 
 [node name="main" type="Node2D"]
 
+[node name="C15780Aa-c80e-4664-be16-eaf755f2f12a" type="Sprite2D" parent="."]
+position = Vector2(561, 335)
+scale = Vector2(1.10952, 1.10952)
+texture = ExtResource("1_nd762")
+
 [node name="player" parent="." instance=ExtResource("1_s3nm6")]
+position = Vector2(138, 104)
 safe_margin = 0.001
 
 [node name="platform" parent="." instance=ExtResource("2_86sp1")]
-position = Vector2(22, 136)
+position = Vector2(112, 234)
+
+[node name="platform2" parent="." instance=ExtResource("2_86sp1")]
+position = Vector2(926, 500)
+
+[node name="platform3" parent="." instance=ExtResource("2_86sp1")]
+position = Vector2(644, 276)
+
+[node name="platform4" parent="." instance=ExtResource("2_86sp1")]
+position = Vector2(288, 398)
